@@ -1,4 +1,4 @@
-# Electron app
+# Electron Boilerplate
 
 ## Useing typescript react and webpack
 
