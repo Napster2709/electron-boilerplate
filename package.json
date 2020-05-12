@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.ts",
-    "serve": "webpack-dev-server --progress",
+    "serve": "webpack-dev-server",
     "start": "npm run build && electron ./dist/electron.js"
   },
   "repository": {
