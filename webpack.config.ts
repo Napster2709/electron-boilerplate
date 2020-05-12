@@ -139,10 +139,9 @@ module.exports = [
       compress: true,
       port: 8080,
       watchContentBase: true,
-      colors: true,
       overlay: true,
       historyApiFallback: true,
-      open: 'google-chrome',
+      open: true,
     },
   },
 ];
