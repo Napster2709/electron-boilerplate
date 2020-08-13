@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.ts",
+    "build-production": "env NODE_ENV=production webpack --config ./webpack.config.ts",
     "serve": "webpack-dev-server",
     "start": "npm run build && electron ./dist/electron.js"
   },

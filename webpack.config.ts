@@ -141,6 +141,7 @@ module.exports = [
       watchContentBase: true,
       overlay: true,
       historyApiFallback: true,
+      clientLogLevel: 'info',
       open: true,
     },
   },

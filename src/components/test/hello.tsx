@@ -1,5 +1,5 @@
-import * as React from 'react';
-import * as styles from './styles.scss';
+import React from 'react';
+import styles from './styles.scss';
 
 interface IProps {
   compiler: string;
