@@ -1203,9 +1203,9 @@
   integrity sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA==
 
 "@types/tmi.js@^1.4.0":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@types/tmi.js/-/tmi.js-1.4.1.tgz#1f364f536cffa0088bc50e2c426150878568553c"
-  integrity sha512-h7lWUf5HdjnKg45SD/38ESHVH2g29hOeN7uyDUFUFiAlW2tYJPgGMNJCQmpvGTRM5GoY08z1xlX7upS4cPxtaw==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@types/tmi.js/-/tmi.js-1.4.2.tgz#0eeecb2665d60ccfe7cec9755c905d3022456975"
+  integrity sha512-EqIctOMPIleqMAnXeCPe7QYt4/kwKQJWxgi6/PbXxVL+Z1w+Ow64QuAahgCDt82XPtnn8fmjJ77XKsiFiLvooQ==
 
 "@types/uglify-js@*":
   version "3.9.3"
