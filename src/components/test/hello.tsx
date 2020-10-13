@@ -14,7 +14,11 @@ interface IProps {
  * @param compiler string
  * @param bundler string
  */
-export const Hello = ({ framework, compiler, bundler }: IProps) => {
+export const Hello = ({
+  framework,
+  compiler,
+  bundler,
+}: IProps): React.ReactElement => {
   return (
     <div className={styles.test}>
       <h2>

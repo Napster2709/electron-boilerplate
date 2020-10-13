@@ -1,9 +1,8 @@
-const { app, BrowserWindow, remote } = require('electron');
-const path = require('path');
-const url = require('url');
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { app, BrowserWindow } = require('electron');
 
 const createWindow = () => {
-  let win = new BrowserWindow({
+  const win = new BrowserWindow({
     backgroundColor: '#212121',
     autoHideMenuBar: true,
     width: 800,

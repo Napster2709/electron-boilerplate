@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
@@ -6,31 +7,10 @@ const dotenv = require('dotenv').config({ path: __dirname + '/.env' });
 
 const env = process.env.NODE_ENV;
 
-module.exports = [
-  // electron entry
-  {
+module.exports = () => {
+  // base entry
+  return {
     mode: env || 'development',
-    target: 'electron-main',
-    entry: './src/electron.ts',
-    module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          include: /src/,
-          use: [{ loader: 'ts-loader' }],
-        },
-      ],
-    },
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'electron.js',
-    },
-  },
-  // Aplication entry
-  {
-    mode: env || 'development',
-    target: 'web',
-    node: { fs: 'empty' },
     entry: './src/index.tsx',
     devtool: 'source-map',
     resolve: {
@@ -123,26 +103,5 @@ module.exports = [
         'process.env': JSON.stringify(dotenv.parsed),
       }),
     ],
-    externals: {
-      React: 'react',
-      ReactDOM: 'react-dom',
-    },
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      pathinfo: true,
-      filename: 'static/js/bundle.js',
-      chunkFilename: 'static/js/[name].chunk.js',
-      // publicPath: '/',
-    },
-    devServer: {
-      contentBase: path.join(__dirname, 'dist'),
-      compress: true,
-      port: 8080,
-      watchContentBase: true,
-      overlay: true,
-      historyApiFallback: true,
-      clientLogLevel: 'info',
-      open: true,
-    },
-  },
-];
+  };
+};
