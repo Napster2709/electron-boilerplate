@@ -30,7 +30,7 @@
     "autoprefixer": "^9.7.3",
     "css-loader": "^5.0.1",
     "dotenv": "^8.2.0",
-    "electron": "^10.1.2",
+    "electron": "^11.0.3",
     "electron-builder": "^22.2.0",
     "eslint": "^7.13.0",
     "eslint-plugin-react": "^7.21.4",
