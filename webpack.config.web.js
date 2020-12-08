@@ -16,9 +16,6 @@ module.exports = () => {
     optimization: {
       nodeEnv: 'web',
     },
-    node: {
-      fs: 'empty',
-    },
     target: 'web',
     externals: {
       React: 'react',
